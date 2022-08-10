@@ -6,10 +6,17 @@ Construir una expresión lógica que use TODAS las variables y cuyo resultado se
 True si al menos una de las variables es True.
 """
 
+from pickle import FALSE, TRUE
+
+
 esta_lloviendo = True
 riego_activado = True
 
 # COMPLETAR - INICIO
+piso_mojado = FALSE
+
+if esta_lloviendo == TRUE or riego_activado == TRUE:
+    piso_mojado = TRUE
 
 # COMPLETAR - FIN
 
@@ -26,7 +33,8 @@ lado_cuadrado = 5
 area_cuadrado = pow(lado_cuadrado, 2)
 
 # COMPLETAR - INICIO
-
+if area_cuadrado > 5:
+    area_mayor_a_cinco = TRUE
 # COMPLETAR - FIN
 
 assert area_mayor_a_cinco
@@ -41,7 +49,8 @@ numero_1 = 49
 numero_2 = 50
 
 # COMPLETAR - INICIO
-
+if numero_1 % 7 == 0 and numero_2 % 2 == 0:
+    resultado = TRUE
 # COMPLETAR - FIN
 
 assert resultado

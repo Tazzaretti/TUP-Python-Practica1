@@ -10,8 +10,11 @@ persona_01 = "Kevin"
 edad_01 = 24
 persona_02 = "Kevin"
 edad_02 = 41
+comparar_nombre_y_edad = False
 
 # COMPLETAR - INICIO
+if persona_01 == persona_02 and edad_01 != edad_02:
+    comparar_nombre_y_edad = True
 
 # COMPLETAR - FIN
 
@@ -28,7 +31,8 @@ marca_del_auto = "Chevrolet"
 modelo_de_auto = 1998
 
 # COMPLETAR - INICIO
-
+if(marca_del_auto != "Ford") and (modelo_de_auto < 2000):
+    comparar_marca_y_modelo = True
 # COMPLETAR - FIN
 
 assert comparar_marca_y_modelo
@@ -46,7 +50,8 @@ superficie_de_campo_02 = 851212
 superficie_de_campo_03 = 8512
 
 # COMPLETAR - INICIO
-
+if superficie_de_campo_01 < superficie_de_campo_02 and superficie_de_campo_02 > superficie_de_campo_03:
+    comparar_superficie = True
 # COMPLETAR - FIN
 
 assert comparar_superficie
@@ -66,7 +71,8 @@ manzanas = 300
 peras = 30
 
 # COMPLETAR - INICIO
-
+if bananas < (naranjas/2) and (naranjas/2) < (2*manzanas) and (2*manzanas) <= (peras**2):
+    comparar_frutas = True
 # COMPLETAR - FIN
 
 assert comparar_frutas
