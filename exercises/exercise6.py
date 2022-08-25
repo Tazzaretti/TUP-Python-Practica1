@@ -6,6 +6,7 @@ Restricción: Utilizar el método append
 """
 
 # COMPLETAR - INICIO
+
 lista_01 = []
 
 lista_01.append("naranja")
