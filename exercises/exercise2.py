@@ -33,7 +33,7 @@ lado_cuadrado = 5
 area_cuadrado = pow(lado_cuadrado, 2)
 
 # COMPLETAR - INICIO
-if area_cuadrado > 5:
+if not area_cuadrado < 5:
     area_mayor_a_cinco = TRUE
 # COMPLETAR - FIN
 
@@ -49,8 +49,7 @@ numero_1 = 49
 numero_2 = 50
 
 # COMPLETAR - INICIO
-if numero_1 % 7 == 0 and numero_2 % 2 == 0:
-    resultado = TRUE
+resultado = numero_1 % 7 == 0 and numero_2 % 7 != 0
 # COMPLETAR - FIN
 
 assert resultado
@@ -68,8 +67,13 @@ variable_03 = 80
 variable_04 = "90"
 variable_05 = 100
 
-# COMPLETAR - INICIO
 
+# No entendimos bien la consigna 
+
+# COMPLETAR - INICIO
+if variable_01 == False and variable_02 == True:
+    if variable_03 == 80 or variable_04 == "90" and variable_05 == 100:
+        resultado = 80
 # COMPLETAR - FIN
 
 assert resultado == 80

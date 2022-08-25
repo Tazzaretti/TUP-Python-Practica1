@@ -74,13 +74,13 @@ numero_02 = "0x6f54F"
 numero_03 = "0o1234"
 numero_04 = 654
 
+# COMPLETAR - INICIO
 numero_01 = int(numero_01)
 numero_02 = int(numero_02, 16)
 numero_03 = int(numero_03, 8)
 numero_04 = int(numero_04)
 
 resultado_resta = numero_01 - numero_02 - numero_03 - numero_04
-# COMPLETAR - INICIO
 
 # COMPLETAR - FIN
 

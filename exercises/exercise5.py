@@ -6,6 +6,9 @@ Formatear las siguientes variables de tipo string en un único string.
 Restricción: Utilizar el operador +.
 """
 
+from typing import final
+
+
 variable_01 = "¡Buenos "
 variable_02 = "días "
 variable_03 = "a todos!"
@@ -29,7 +32,11 @@ usar operadores).
 # "strings!"
 
 # COMPLETAR - INICIO
-strings_concatenados = "¡Mamá estoy concatenando strings!"
+mama = "¡Mamá "
+estoy = "estoy concatenando "
+ultima = "strings!"
+
+strings_concatenados = "{}{}{}".format(mama, estoy, ultima)
 # COMPLETAR - FIN
 
 assert strings_concatenados == "¡Mamá estoy concatenando strings!"
@@ -48,7 +55,7 @@ variable_03 = " pesos a un amigo."
 # COMPLETAR - INICIO
 variable_02 = str(variable_02)
 
-strings_concatenados.format = "{variable_01} {variable_02} {variable_03}"
+strings_concatenados = variable_01 + variable_02 + variable_03
 print(strings_concatenados)
 # COMPLETAR - FIN
 
@@ -65,10 +72,11 @@ variable_01 = "Le debo "
 variable_02 = 6
 variable_03 = " pesos a un amigo hace "
 variable_04 = " años."
-variable_05 = "Ezequiel"
+variable_05 = " Ezequiel"
 
 # COMPLETAR - INICIO
-
+strings_concatenados = "{}{}{}{}{} Se llama{}".format(variable_01, variable_02, variable_03, variable_02, variable_04, variable_05)
+print(strings_concatenados)
 # COMPLETAR - FIN
 
 assert (
@@ -87,7 +95,8 @@ variable_03 = " pesos que le debía a Ezequiel, me faltan $"
 variable_04 = 4
 
 # COMPLETAR - INICIO
-
+strings_concatenados = f'{variable_01}{variable_02}{variable_03}{variable_04}'
+print (strings_concatenados)
 # COMPLETAR - FIN
 
 assert strings_concatenados == "Le pagué 2 pesos que le debía a Ezequiel, me faltan $4"
